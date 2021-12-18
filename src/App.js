@@ -46,6 +46,7 @@ const App = () => {
           id=""
           value={search}
           onChange={updateSearch}
+          placeholder="e.g search for cherry"
         />
         <button className="search-button" type="button" onClick={getSearch}>
           Search
