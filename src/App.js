@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from "react";
-import "./App.css";
-import Recipe from "./recipe";
+import React, { useEffect, useState } from 'react';
+import './App.css';
+import Recipe from './recipe';
 
 const App = () => {
-  const APP_ID = "144359d0";
-  const APP_KEY = "f20fd8ce3e4fca7d9725969f818cec7e";
+  const APP_ID = '144359d0';
+  const APP_KEY = 'f20fd8ce3e4fca7d9725969f818cec7e';
 
   const [recipes, setRecipes] = useState([]);
-  const [search, setSearch] = useState("");
-  const [query, setQuery] = useState("");
+  const [search, setSearch] = useState('');
+  const [query, setQuery] = useState('');
 
   useEffect(() => {
     getRecipes();
@@ -32,12 +32,12 @@ const App = () => {
     e.preventDefault();
 
     setQuery(search);
-    setSearch("");
+    setSearch('');
   };
 
   return (
     <div className="App">
-      <h1 className="app-title">Search for food recipe</h1>
+      <h1 className="app-title">Search for food recipeeeee</h1>
       <form onSubmit={getSearch} action="" className="search-form">
         <input
           className="search-bar"
